@@ -1,6 +1,7 @@
 import { Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -17,13 +18,8 @@ export function Header() {
       <div className="container-narrow">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex flex-col">
-            <span className="font-serif text-xl md:text-2xl font-semibold text-foreground tracking-tight">
-              Nengwekhulu
-            </span>
-            <span className="text-xs tracking-[0.3em] text-muted-foreground uppercase">
-              Attorneys Inc.
-            </span>
+          <a href="#">
+            <img src={logo} alt="Nengwekhulu Attorneys Inc." className="h-14 md:h-16 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
